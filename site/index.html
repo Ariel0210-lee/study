@@ -1,79 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- css -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-
 <body>
     <nav class="d-flex">
         <div class="logo">
             <h1>LOGO Designer</h1>
         </div>
         <ul class="navi d-flex">
-            <li>
-                <a href="#">
-                    Wallpapers
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    Nature
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    3D Renders
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    Textures
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    Archirecture & Interiors
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    Travel
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    Street Photography
-                </a>
-            </li>
+            <li><a href="#">Wallpapers</a></li>
+            <li><a href="#">Nature</a></li>
+            <li><a href="#">3D Renders</a></li>
+            <li><a href="#">Textures</a></li>
+            <li><a href="#">Archirecture & Interiors</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Street Photography</a></li>
         </ul>
         <div class="icon">
             <ul class="d-flex">
-                <li class="m">
-                    <a href="#">
-                        <img src="assets/images/icon/icon--search.svg" alt="icon--search">
-                    </a>
-                </li>
-                <li class="m">
-                    <a href="#">
-                        <img src="assets/images/icon/icon--bag.svg" alt="icon--bag">
-                    </a>
-                </li>
-                <li class="m-navi">
-                    <a href="#">
-                        <img src="assets/images/icon/icon--menu.svg" alt="icon--menu">
-                    </a>
-                </li>
+                <li class="none"><a href="#">
+                        <img src="assets/images/icon--search.svg" alt="">
+                    </a></li>
+                <li class="none"><a href="#">
+                        <img src="assets/images/icon--bag.svg" alt="">
+                    </a></li>
+                <li class="m-navi"><a href="#">
+                        <img src="assets/images/material-symbols_menu-rounded.svg" alt="">
+                    </a></li>
             </ul>
         </div>
     </nav>
-    <section class="section">
+    <section class="slider">
         <img src="assets/images/kv.jpg" alt="kv">
     </section>
-</body>
+    <section class="content-slide">
+        <div class="cotnent-textTitle">
+            <h2>
+                Pulvinar elementum interger enim neque volutpat
+            </h2>
+            <p>
+                Pulvinar elementum interger enim neque volutpat
+            </p>
+        </div>
+        <div class="slider">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/images/slide01.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/slide02.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/slide03.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/slide04.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/slide05.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/slide06.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/slide07.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/slide08.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
 
+    <seciton class="content w-1316">
+        <div class="content-textTitle">
+            <h2>
+                Pulvinar elementum interger enim neque volutpat
+            </h2>
+            <p>
+                Pulvinar elementum interger enim neque volutpat
+            </p>
+        </div>
+        <div class="row d-flex f-d-column gap">
+            <div class="column-4">
+                <div class="img-section">
+                    <img src="assets/images/beaker01.jpg" alt="">
+                </div>
+                <div class="text-section">
+                    <h3>
+                        Beaker Background
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Cursus egestas bibendum vitae ut ultrices amet.
+                    </p>
+                </div>
+            </div>
+            <div class="column-4">
+                <div class="img-section">
+                    <img src="assets/images/beaker02.jpg" alt="">
+                </div>
+                <div class="text-section">
+                    <h3>
+                        Beaker Background
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Cursus egestas bibendum vitae ut ultrices amet.
+                    </p>
+                </div>
+            </div>
+            <div class="column-4">
+                <div class="img-section">
+                    <img src="assets/images/beaker03.jpg" alt="">
+                </div>
+                <div class="text-section">
+                    <h3>
+                        Beaker Background
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Cursus egestas bibendum vitae ut ultrices amet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </seciton>
+
+
+    <!-- slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            loop: true,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
 </html>

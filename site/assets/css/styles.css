@@ -79,9 +79,7 @@
   }
 
 
-.d-flex{
-    display: flex;
-}
+
 
 .logo h1{
     font-size: 24px;
@@ -120,8 +118,40 @@ img{
 }
 
 
+.slide{
+    width: 100%;
+    overflow: hidden;
+}
+.slider-center{
+    width: 250px !important;
+    padding: 0 10px;
+}
+
+.d-flex{
+    display: flex;
+}
+.gap{
+    gap: 0 10px;
+}
+.w-1316{
+    width: 1316px;
+    margin: auto;
+}
+.coulmn-4{
+    width: 30%;
+}
 
 
+@media(max-width:1773px){
+    nav{
+        width: 100%;
+        padding: 26px 24px;
+    }
+    .w-1316{
+        width: 100%;
+        margin: 0;
+    }
+}
 
 @media(max-width:1280px){
     nav{
@@ -154,6 +184,17 @@ img{
     .m-navi{
         display: block;
     }
+    .column-4{
+        width: 100%;
+    }
+    .f-d-column{
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .gap{
+        gap: 10px 0;
+    }
+
 }
 
 @media(max-width:576px){
