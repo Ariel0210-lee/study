@@ -271,16 +271,7 @@ img{
         width: 315px;
         padding-top: 30px;
     }
-    .content-textTitle h2{
-        font-size: 18px;
-    }
-    .content-textTitle p{
-        font-size: 12px;
-        margin-top: 20px;
-    }
-    .text-section h3{
-        font-size: 18px;
-    }
+
     .text-section p{
         font-size: 12px;
     }
@@ -298,6 +289,16 @@ img{
     }
     .content-textTitle p{
         margin-top: 16px;
+    }
+    .content-textTitle h2{
+        font-size: 18px;
+    }
+    .content-textTitle p{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .text-section h3{
+        font-size: 18px;
     }
 }
 
