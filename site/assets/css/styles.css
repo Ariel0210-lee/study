@@ -82,7 +82,7 @@
 
 
 .logo h1{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 140%;
     letter-spacing: -2.5%;
@@ -101,7 +101,7 @@ nav{
 .navi a{
     text-decoration: none;
     color: #000;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 140%;
     letter-spacing: -2.5%;
@@ -110,6 +110,9 @@ nav{
     gap: 0 11px;
 }
 
+.icon{
+    display: block;
+}
 .m-navi{
     display: none;
 }
@@ -121,11 +124,33 @@ img{
 .slide{
     width: 100%;
     overflow: hidden;
+    padding-bottom: 100px;
 }
-.slider-center{
-    width: 250px !important;
-    padding: 0 10px;
+.content-textTitle{
+    width: 420px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 80px;
+    padding-top: 100px;
+    gap: 28px;
 }
+.content-textTitle h2{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -2.5%;
+}
+.content-textTitle p{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -2.5%;
+    color: #767676;
+    margin-top: 28px;
+}
+
 
 .d-flex{
     display: flex;
@@ -137,8 +162,32 @@ img{
     width: 1316px;
     margin: auto;
 }
+.row{
+    padding-bottom: 100px;
+}
 .coulmn-4{
     width: 30%;
+}
+
+.text-section{
+    width: 100%;
+    gap: 28px;
+    margin-top: 20px;
+}
+.text-section h3{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -2.5%;
+}
+.text-section p{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -2.5%;
+    color: #767676;
+    margin-top: 28px;
 }
 
 
@@ -168,8 +217,29 @@ img{
     .m-navi{
         display: none;
     }
-    .m{
+    .none{
         display: none;
+    }
+    .slide{
+        padding-bottom: 50px;
+    }
+    .content-textTitle{
+        width: 360px;
+        padding-top: 50px;
+        margin-bottom: 40px;
+    }
+    .content-textTitle h2{
+        font-size: 22px;
+    }
+    .content-textTitle p{
+        font-size: 16px;
+        margin-top: 22px;
+    }
+    .text-section h3{
+        font-size: 22px;
+    }
+    .text-section p{
+        margin-top: 16px;
     }
 }
 
@@ -178,7 +248,7 @@ img{
     .navi{
         display: none;
     }
-    .m{
+    .none{
         display: none;
     }
     .m-navi{
@@ -194,18 +264,40 @@ img{
     .gap{
         gap: 10px 0;
     }
-
+    .slide{
+        padding-bottom: 30px;
+    }
+    .content-textTitle{
+        width: 315px;
+        padding-top: 30px;
+    }
+    .content-textTitle h2{
+        font-size: 18px;
+    }
+    .content-textTitle p{
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .text-section h3{
+        font-size: 18px;
+    }
+    .text-section p{
+        font-size: 12px;
+    }
 }
 
 @media(max-width:576px){
     .navi{
         display: none;
     }
-    .m{
+    .none{
         display: none;
     }
     .m-navi{
         display: block;
+    }
+    .content-textTitle p{
+        margin-top: 16px;
     }
 }
 
