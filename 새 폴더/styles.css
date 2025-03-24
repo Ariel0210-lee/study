@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 900;
+    src: url(pre/Pretendard-Black.woff) format('woff');
+}
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 800;
+    src: url(pre/Pretendard-ExtraBold.woff) format('woff');
+}
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 700;
+    src: url(pre/Pretendard-Bold.woff) format('woff');
+}
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 600;
+    src: url(pre/Pretendard-SemiBold.woff) format('woff');
+}
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 500;
+    src: url(pre/Pretendard-Medium.woff) format('woff');
+}
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 400;
+    src: url(pre/Pretendard-Regular.woff) format('woff');
+}
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 300;
+    src: url(pre/Pretendard-Light.woff) format('woff');
+}
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 200;
+    src: url(pre/Pretendard-ExtraLight.woff) format('woff');
+}
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 100;
+    src: url(pre/Pretendard-Thin.woff) format('woff');
+}
+
+*{
+    font-family: "Pretendard";
+}
+
+.d-flex-s{
+    display: flex;
+    justify-content: space-between;  
+    gap: 20px;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.content{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 130px;
+    margin-bottom: 160px;
+}
+
+.content h2{
+    text-align: center;
+    font-size: 44px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 40px;
+    line-height: 100%;
+}
+
+.content_box{
+    width: 25%;
+}
+
+.content_box img{
+    width: 100%;
+    height: 480px;
+}
+
+.content_txt{
+    width: 100%;
+    text-align: center;
+    padding: 24px, 24px, 0;
+}
+
+.content_txt .tag{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #666;
+}
+
+.content_txt h3{
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 133.333%;
+    color: #000;
+    margin-top: 10px;
+}
+
+.content_txt .content_sub{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #000;
+    margin-top: 6px;
+}
