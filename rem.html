@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html{
+            font-size: 62.5%; /* 10px (16px 기준) */
+        }
+        body{
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            padding: 2rem;
+            background-color: #f5f5f5;
+        }
+        .card{
+            background: white;
+            border-radius: 0.8rem; /* rem : 전체 일관성 */
+            box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+            padding: 1.6rem; /* rem */
+            margin-bottom: 2rem;
+            max-width: 30rem;
+            transition: transform 0.3s;
+        }
+        .card:hover{
+            transform: translateY(-0.4rem);
+        }
+        /* 카드 이미지 (em으로 부모 크기에 반응) */
+
+        .card img{
+            width: 100%;
+            height: 12em; /* 부모 폰트 크기의 12배 */
+            object-fit: cover;
+            border-radius: 0.4rem;
+        }
+
+        /* 카드 제목(rem) */
+        .card-title{
+            font-size: 1.8rem;
+            margin: 1rem 0;
+            color: #333;
+        }
+
+        /* 카드 내용(em으로 부모 폰트 크기 상속) */
+        .card-content{
+            font-size: 1em;
+            /* 부모(.card)의 폰트 크기 따름 */
+            color: #666;
+            margin-bottom: 1.2em;
+            /* 현재 폰트 크기의 1.2배 */
+        }
+        /* 버튼(em으로 내부 패딩 조정) */
+        .card-button{
+            display: inline-block;
+            background-color: #4caf50;
+            color: white;
+            padding: 0.6em 1.2em; /* 폰트 크기의 0.6배, 1.2배 */
+            border-radius: 0.4rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .card-button:hover{
+            background: #45a049;
+        }
+
+
+        /* 데스크탑 (1024px 이상) */
+        @media (min-width: 1024px){
+            html{
+                font-size: 87.5%; /* 14px */
+            }
+            .card{
+                max-width: 50rem;
+            }
+            .card-title{
+                font-size: 2.2rem;
+            }
+        }
+
+        /* 태블릿(768px 이상) */
+        @media (min-width: 768px){
+            html{
+                font-size: 75%; /* 12px */
+            }
+            .card{
+                max-width: 40rem;
+                padding: 2rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/61/43/91/6143910c0cf3df8ca90caafa08ca48a2.jpg" alt="예시 이미지" class="card-img">
+        <h2 class="card-title">
+            반응형 카드 제목
+        </h2>
+        <p class="card-content">
+            이 카드는 화면 크기에 따라 폰트, 여백, 이미지 높이가 자동으로 조정됩니다. rem과 em의 차이를 확인해 보세요!
+        </p>
+        <a href="#" class="card-button">
+            더보기
+        </a>
+
+    </div>
+</body>
+</html>
