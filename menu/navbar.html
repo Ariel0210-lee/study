@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">Soft landing</div>
+      <!-- LOGO -->
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <!-- 고스트버튼 -->
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#sec01" class="active">HOME</a></li>
+          <li><a href="#sec02">Features</a></li>
+          <li><a href="#sec03">Pricing</a></li>
+          <li><a href="#sec04">About</a></li>
+          <li><a href="#sec05">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- 메뉴 -->
+    </header>
+
+<section id="sec01" style="height: 100vh; background: pink;">
+
+</section>
+<section id="sec02" style="height: 100vh; background: bisque;">
+
+</section>
+<section id="sec03" style="height: 100vh; background: skyblue;">
+
+</section>
+<section id="sec04" style="height: 100vh; background: cornflowerblue;">
+
+</section>
+<section id="sec05" style="height: 100vh; background: coral;">
+
+</section>
+
+    <script>
+        let hamburger = document.querySelector('.hamburger');
+        hamburger.onclick = function(){
+            navBar = document.querySelector('.nav-bar');
+            navBar.classList.toggle("active");
+        }
+
+    </script>
+  
+    </body>
+</html>

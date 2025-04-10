@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        .box1{
+            background-color: pink;
+            position: relative;
+        }
+        .box2{
+            background-color: paleturquoise;
+        }
+        .box3{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <button>Click!</button>
+    <ul class="list">
+        <li>hello</li>
+        <li>나는 두번째야</li>
+        <li>근데 세번째인데?</li>
+    </ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script>
+
+        $(function(){
+            $('button').click(function(){
+                $('li').prepend("재밌어요!!!");
+                // $('.list').append("<li>네번째야!</li>");
+                // append 추가 어디에? 마지막 요소
+            });
+        })
+
+
+
+        // $(document).ready(function(){
+        //     $('button').click(function(){
+        //         $('.box1').animate({
+        //             left:'+=250px',
+        //             width: '300px',
+        //             height: '300px',
+        //             opacity: '0.5'
+        //         })
+        //     })
+        // })
+
+
+        // $(function(){
+        //     $("button").click(function(){
+        //         $('.box1').animate(function(){
+        //             left: '250px';
+        //         });
+        //         // $('.box1').fadeIn(1000);
+        //         // $('.box2').fadeIn(1500);
+        //         // $('.box3').fadeIn(2000);
+        //     })
+        // });
+    </script>
+</body>
+</html>

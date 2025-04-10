@@ -1,0 +1,17 @@
+.full-bg{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.full-wh{
+    width: 50%;
+    background-color: #fff;
+    text-align: center;
+}
+
