@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    text-align: center;
+    padding: 30px;
+    color: #474444;
+}
+
+
+h1{
+    color: #6c6363;
+    margin-bottom: 20px;
+}
+
+input{
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #e4d8d8;
+    border-radius: 5px;
+    color: #6c6363;
+}
+input::placeholder{
+    color: #c1baba;
+}
+
+button{
+    padding: 8px 12px;
+    background-color: #ffe5e5;
+    border: 1px solid #e4d8d8;
+    border-radius: 5px;
+    color: #6c6363;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    margin-top: 10px;
+}

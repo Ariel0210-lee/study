@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-box{
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .login-box h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-box input{
+            width: 92%;
+            padding: 10px;
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        .login-box button{
+            width: 100%;
+            padding: 10px;
+            background-color: skyblue;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        #welcome{
+            display: none;
+            margin-top: 20px;
+            font-size: 20px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>로그인</h2>
+        <input type="text" id="userId" placeholder="아이디 입력">
+        <input type="password" id="userPw" placeholder="비밀번호 입력">
+        <button id="loginBtn">로그인</button>
+    </div>
+
+    <div id="welcome">✅ 로그인 성공! 환영합니다 😌</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $('#loginBtn').click(function(){
+            const id = $('#userId').val();
+            const pw = $('#userPw').val();
+
+            const userId = 'test';
+            const userPw = '1234';
+
+            // 1q2w3e4r qwer1234
+
+            if(id === userId && pw === userPw){
+                $('.login-box').hide();
+                $('#welcome').fadeIn();
+            } else{
+                alert("으이구 또 틀리냐!");
+            }
+        })
+    </script>
+</body>
+</html>

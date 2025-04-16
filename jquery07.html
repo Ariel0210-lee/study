@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+      h1 {
+        margin: 0;
+        padding: 0;
+      }
+
+      .memo {
+        width: 100%;
+        clear: both;
+        padding: 0;
+        margin: 0 auto;
+        background: #eee;
+        height: 1000px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      #memo_1 {
+        color: pink;
+      }
+      #memo_2 {
+        color: skyblue;
+      }
+      #memo_3 {
+        color: cornflowerblue;
+      }
+      #memo_4 {
+        color: coral;
+      }
+      a{
+        text-decoration: none;
+      }
+      #btn {
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        background: lawngreen;
+        height: 33px;
+        width: 74px;
+        text-align: center;
+        cursor: pointer;
+        display: none;
+      }
+      #btn a{
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="btn">
+      <a href="#">Top</a>
+    </div>
+
+    <div id="memo_1" class="memo">
+      <h1>본문 1</h1>
+    </div>
+    <div id="memo_2" class="memo">
+      <h1>본문 2</h1>
+    </div>
+    <div id="memo_3" class="memo">
+      <h1>본문 3</h1>
+    </div>
+    <div id="memo_4" class="memo">
+      <h1>본문 4</h1>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+          $("#btn").fadeIn();
+        } else {
+          $("#btn").fadeOut();
+        }
+      });
+    //   $('#btn').click(function(){
+    //     $('html,body').animate({
+    //         scrollTop:0
+    //     },1000);
+    //   })
+    </script>
+  </body>
+</html>

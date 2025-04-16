@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;
+            color: skyblue;
+            gap: 0 30px;
+        }
+        header{
+            display: none;
+            background-color: #fff;
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+            transition: background 0.3s;
+        }
+        .background-on{
+            background-color: azure;
+        }
+        header ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        section{
+            height: 100vh;
+        }
+        #sec01{
+            background-color: pink;
+        }
+        #sec02{
+            background-color: bisque;
+        }
+        #sec03{
+            background-color: cornflowerblue;
+        }
+        #sec04{
+            background-color: #4e5687;
+        }
+        #sec05{
+            background-color: #fee;
+        }
+        .header{
+            width: 100%;
+            height: 80px;
+            position: fixed;
+            left: 0;
+            top: -80px;
+            z-index: 9999;
+        }
+        header.fixed{
+            top: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <ul>
+            <li>
+                <a href="#sec01">sec01</a>
+            </li>
+            <li>
+                <a href="#sec02">sec02</a>
+            </li>
+            <li>
+                <a href="#sec03">sec03</a>
+            </li>
+            <li>
+                <a href="#sec04">sec04</a>
+            </li>
+            <li>
+                <a href="#sec05">sec05</a>
+            </li>
+        </ul>
+    </header>
+    <section id="sec01"></section>
+    <section id="sec02"></section>
+    <section id="sec03"></section>
+    <section id="sec04"></section>
+    <section id="sec05"></section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function(){
+            const scrollY = $(this).scrollTop();
+            console.log('현재 스크롤 : ', scrollY);
+
+            if(scrollY > 100){
+                $('header').slideDown();
+            } else{
+                $('header').slideUp();
+            }
+        })
+
+
+
+        // $(window).on('scroll'), function(){
+        //     let scrollTop = $(this).scrollTop();
+
+        //     if(scrollTop > lastScroll){
+        //         $('header').removeClass('fixed');
+        //     } else{
+        //         $('header').addClass('fixed');
+        //     }
+        //     let lastScroll = scrollTop;
+        // }
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        // const bgClasses = ['bg-sec01', 'bg-sec02', 'bg-sec03', 'bg-sec04', 'bg-sec05']
+        // window.addEventListener('scroll', ()=>{
+        //     const scrollY = window.scrollY;
+        //     // const scroll = $(window).scrollTop();
+
+        //     header.classList.remove(...bgClasses);
+        //     // header.removeClass('bg-sec01 bg-sec02 bg-sec03 bg-sec04 bg-sec05');
+
+        //     sections.forEach((section, index) =>{
+        //         const top = section.offsetTop;
+        //         const bottom = top = section.offsetheight;
+
+        //         if(scrollY >= top && scroll < bottom){
+        //             header.classList.add(bgClasses[index]);
+        //         }
+        //     })
+        // })
+
+
+
+        // const sections = ['sec01', 'sec02', 'sec03', 'sec04', 'sec05'];
+
+        // $(window).on('scroll', function(){
+        //     const scroll = $(window).scrollTop();
+        //     const header = $('header');
+
+        //     // console.log('현재 스크롤 위치', scroll);
+
+        //     const sec01Top = $('#sec01').offset().top;
+        //     // 0~1000
+        //     header.removeClass('bg-sec01 bg-sec02 bg-sec03 bg-sec04 bg-sec05');
+
+        //     const sec02Top = $('#sec02').offset().top;
+        //     const sec03Top = $('#sec03').offset().top;
+        //     const sec04Top = $('#sec04').offset().top;
+        //     const sec05Top = $('#sec05').offset().top;
+
+        //     if(scroll >= sec01Top && scroll < sec02Top){
+        //         header.addClass('bg-sec01');
+        //     } else if(scroll >= sec02Top && scroll < sec03Top){
+        //         header.addClass('bg-sec02');
+        //     } else if(scroll >= sec03Top && scroll < sec04Top){
+        //         header.addClass('bg-sec03');
+        //     } else if(scroll >= sec04Top && scroll < sec05Top){
+        //         header.addClass('bg-sec04');
+        //     } else if(scroll >= sec05Top){
+        //         header.addClass('bg-sec05');
+        //     }
+        // });
+
+        
+    </script>
+  </body>
+</html>
